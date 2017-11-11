@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aadithyakrishnan.vision_sense.Evaluate_Activity_1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave2" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="onclick"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"
+        android:id="@+id/button"
+        android:text="Evaluate!"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@android:color/holo_orange_dark"
+
+        android:text="This app uses photo of a valid expression to give the answer\n\nSupports addition(+),subtraction(-),division(/),multiplication(x),tan value,sin value,cos value,log value\n\nImportant Instruction.\nNatural Handwriting might not work properly\nExpects a valid expression\nCrop out other parts for the image such as umwated texts(not part of the expression)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/wave1" />
+    <!--  <Button
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:onClick="onpick"
+          android:id="@+id/button1"
+          android:text="click photo"
+          android:enabled="false"/> -->
+</LinearLayout>

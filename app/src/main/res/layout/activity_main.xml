@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.aadithyakrishnan.vision_sense.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave2" />
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="TRANSLATOR"
+        android:textColor="@android:color/holo_orange_light"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"
+
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Spinner
+    android:id="@+id/spinner"
+        android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_dark"
+
+    android:layout_margin="10dp">
+
+</Spinner>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_dark"
+
+        android:layout_margin="10dp">
+
+    </Spinner></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/auto_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="auto_focus" />
+
+        <CheckBox
+            android:id="@+id/use_flash"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_weight="1"
+
+            android:checked="false"
+            android:text="use_flash" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/read_text"
+        android:layout_width="match_parent"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="READ TEXT!" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/wave1" />
+</LinearLayout>
